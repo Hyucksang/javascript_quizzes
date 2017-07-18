@@ -1,9 +1,11 @@
 // 여기에 'FOO' 와 'BAR' 문자열을 임포트하세요
+import { fooString } from './foo'
+import barstring from './bar' 
 // 또한 아래의 bazString을 실제로 임포트할 수 있도록 올바른 위치에 파일을 만드세요.
 import { bazString } from './baz/bazFile';
 
 
-const result = /* 여기에서 위의 임포트한 문자열을 모두 합치세요 */ bazString;
+const result = /* 여기에서 위의 임포트한 문자열을 모두 합치세요 */ fooString + barstring +  bazString;
 
 const expectedResult = 'FOOBARBAZ';
 
